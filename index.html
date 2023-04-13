@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>emotions to buy</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1><span class="mainletter">e</span>motions to buy</h1>
+    <button class="pers_btn" onclick="showCalm()">Calm emotions</button>
+    <button class="pers_btn" onclick="showStrong()">Strong emotions</button>
+    <button class="pers_btn" onclick="showSuper()">Super cars!</button>
+    <button class="pers_btn" onclick="showNo()">No emotions</button>
+    <section id="calm_emotions">
+      <h2>Calm emotions</h2>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/500_ext.png" />
+          <h2 class="name">Fiat 500</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/500_int.png" />
+          <p class="price">40.000zł</p>
+          <p class="mileage">50.000km 22KM 1970</p>
+          <button class="pers_btn" id="personalizef5" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/126_ext.png" />
+          <h2 class="name">Fiat 126</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/126_int.png" />
+          <p class="price">30.000zł</p>
+          <p class="mileage">86.000km 23KM 1973</p>
+          <button class="pers_btn" id="personalizef1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/mikrus1_ext.png" />
+          <h2 class="name">Mikrus MR-300</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/mikrus1_int.png" />
+          <p class="price">37.000zł</p>
+          <p class="mileage">21.000km 15KM 1958</p>
+          <button class="pers_btn" id="personalizem1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="strong_emotions">
+      <h2>Strong emotions</h2>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/civici_ext.png" />
+          <h2 class="name">Honda Civic I</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/civici_int.png" />
+          <p class="price">46.500zł</p>
+          <p class="mileage">1.450.000km 54KM 1972</p>
+          <button class="pers_btn" id="personalizeh1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/smb_ext.png" />
+          <h2 class="name">Škoda 1000MB</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/smb_int.png" />
+          <p class="price">40.500zł</p>
+          <p class="mileage">67.000km 52KM 1965</p>
+          <button class="pers_btn" id="personalizemb1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/lada_ext.png" />
+          <h2 class="name">Lada 1500s</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/lada_int.png" />
+          <p class="price">42.000zł</p>
+          <p class="mileage">70.000km 75KM 1978</p>
+          <button class="pers_btn" id="personalizel1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/110r_ext.png" />
+          <h2 class="name">Škoda 110R</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/110r_int.png" />
+          <p class="price">77.000zł</p>
+          <p class="mileage">3.600km 62KM 1980</p>
+          <button class="pers_btn" id="personalizes1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/dacia_ext.png" />
+          <h2 class="name">Dacia 1300</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/dacia_int.png" />
+          <p class="price">28.000zł</p>
+          <p class="mileage">100.000km 54KM 1974</p>
+          <button class="pers_btn" id="personalized1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/polonez1_ext.png" />
+          <h2 class="name">Polonez 1500</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/polonez1_int.png" />
+          <p class="price">16.000zł</p>
+          <p class="mileage">88.000km 70KM 1979</p>
+          <button class="pers_btn" id="personalizep1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="super_cars">
+      <h2>Super cars!</h2>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/nsx_ext.png" />
+          <h2 class="name">Honda NSX II</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/nsx_int.png" />
+          <p class="price">725.000zł</p>
+          <p class="mileage">5.400km 581KM 2015</p>
+          <button class="pers_btn" id="personalizen1" onclick="saleRedirect2()">
+            Wybierz formę płatności
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/h2000_ext.png" />
+          <h2 class="name">Honda S2000</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/h2000_int.png" />
+          <p class="price">132.000zł</p>
+          <p class="mileage">44.000km 240KM 2002</p>
+          <button
+            class="pers_btn"
+            id="personalizeh21"
+            onclick="saleRedirect2()"
+          >
+            Wybierz formę płatności
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="no_emotions">
+      <h2>No emotions</h2>
+      <div class="card">
+        <div class="card-side front">
+          <img src="./resources/img/tarpan_ext.png" />
+          <h2 class="name">Tarpan 237</h2>
+        </div>
+        <div class="card-side back">
+          <img src="./resources/img/tarpan_int.png" />
+          <p class="price">10.000zł</p>
+          <p class="mileage">15.400km 50KM 1986</p>
+          <button class="pers_btn" id="personalizet1" onclick="saleRedirect()">
+            Personalizuj
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

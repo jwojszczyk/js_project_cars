@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lexend+Peta:wght@500&display=swap');
+
+
+/* @media screen and (max-width: 600px) {
+  
+} */
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    color: ghostwhite;
+}
+
+
+.mainletter {
+    color: yellow;
+    font-family: 'Leckerli One', cursive;
+    font-size: 250%;
+}
+
+.card {
+  perspective: 150rem;
+  position: relative;
+  height: 40rem;
+  max-width: 640px;
+  margin: auto;
+  background-color: black;
+}
+
+.card-side {
+  height: 35rem;
+  border-radius: 15px;
+  transition: all 1.1s ease;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  color: rgb(255, 255, 255);
+}
+
+.card-side.back {
+  transform: rotateY(-180deg);
+}
+
+
+.card:hover .card-side.front {
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+  transform: rotateY(0deg);
+}
+
+img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.personalize {
+  background-color: rgb(254, 122, 122);
+  font-family: 'Lexend Peta', sans-serif;
+}
+
+.accessories {
+  display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.back_Btn {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  left: 20px;
+}
+
+.error_text {
+  color: red;
+}
+
+.chosen {
+  max-width: 400px;
+  height: auto;
+}
+
+.not_visible {
+  visibility: hidden
+}
+
+.pers_btn {
+  padding: 10px;
+  background-color: rgb(12, 12, 12);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: ghostwhite;
+  transition: 0.7s;
+}
+
+.pers_btn:hover {
+  background-color: rgb(54, 54, 54);
+}
+

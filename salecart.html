@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sale cart</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="salecart.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <p>
+        <img class="chosen" id="imgOfChosen" />
+      </p>
+    </div>
+    <div id="addMore">
+      <div id="accessories" class="accessories">
+        <table>
+          <tr>
+            <th></th>
+            <th>Dopłata</th>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="winter_tires"
+                onchange="addAccessories()"
+              />
+              <label for="winter_tires">Opony zimowe</label>
+            </td>
+            <td>2000zł</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="bike_carrier"
+                onchange="addAccessories()"
+              />
+              <label for="bike_carrier">Przyczepka rowerowa</label>
+            </td>
+            <td>3500zł</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="alloy_wheels"
+                onchange="addAccessories()"
+              />
+              <label for="alloy_wheels">Felgi aluminiowe</label>
+            </td>
+            <td>3500zł</td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                id="lthrseatcvrs"
+                onchange="addAccessories()"
+              />
+              <label for="lthrseatcvrs">Skórzana tapicerka</label>
+            </td>
+            <td>5500zł</td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <p>Cena samochodu: <span id="fullPrice">X</span></p>
+      </div>
+      <div>
+        <p>Wybierz formę płatności:</p>
+        <form>
+          <input
+            type="radio"
+            name="radio_btn"
+            id="radio_btn"
+            class="required"
+            value="cash"
+            checked="checked"
+            onclick="show1();"
+          />
+          gotówka
+          <input
+            type="radio"
+            name="radio_btn"
+            id="radio_btn"
+            class="required"
+            value="leasing"
+            onclick="show2();"
+          />
+          leasing<br />
+          <p id="div1" class="not_visible">przygotujemy niezbędne dokumenty</p>
+        </form>
+      </div>
+
+      <div>
+        <form name="flname_form">
+          <div class="input_container">
+            <label for="fname_input">Imię:</label>
+            <input
+              type="text"
+              name="fname"
+              id="fname_input"
+              onclick="carPurchase()"
+              required
+            />
+
+            <label for="lname_input">Nazwisko:</label>
+            <input
+              type="text"
+              name="lname"
+              id="lname_input"
+              onclick="carPurchase()"
+              required
+            />
+          </div>
+          <div class="input_container">
+            <form>
+              <label for="city">Wybierz miasto:</label>
+              <select name="city" id="city" onchange="displayCity()">
+                <optgroup label="dolnośląskie">
+                  <option value="Wrocław" selected>Wrocław</option>
+                </optgroup>
+
+                <optgroup label="opolskie">
+                  <option value="Brzeg">Brzeg</option>
+                  <option value="Opole">Opole</option>
+                </optgroup>
+                <optgroup label="wielkopolskie">
+                  <option value="Poznań">Poznań</option>
+                  <option value="Leszno">Leszno</option>
+                </optgroup>
+              </select>
+              <br />
+            </form>
+            <label id="today"></label>
+            <div>
+              <p class="error_text hidden" id="forms_error">Uzupełnij dane!</p>
+            </div>
+          </div>
+        </form>
+        <button type="button" id="back_Btn" class="back_Btn">Powrót</button>
+        <button id="purchase_button" onclick="carPurchase()">Kupuję!</button>
+      </div>
+    </div>
+    <div id="congratulations" class="hidden">
+      <h1>Serdecznie gratulujemy zakupu!</h1>
+      <p>Wybrane auto: <span id="the_chosen">X</span></p>
+      <p>Dodane akcesoria: <span id="added"></span></p>
+      <p>Cena całkowita: <span id="amount"></span></p>
+      <p>Imię i nazwisko: <span id="name_surname"></span></p>
+      <p>Miejsce odbioru: <span id="place"></span></p>
+      <p id="pickup_day"></p>
+
+      <button id="doneBtn">Zamknij</button>
+    </div>
+  </body>
+</html>
