@@ -143,20 +143,23 @@
             </div>
           </div>
         </form>
-        <button type="button" id="back_Btn" class="back_Btn">Powrót</button>
-        <button id="purchase_button" onclick="carPurchase()">Kupuję!</button>
+        <button type="button" id="back_Btn" class="pers_btn">Powrót</button>
+        <button class="pers_btn" id="purchase_button" onclick="carPurchase()">
+          Kupuję!
+        </button>
       </div>
     </div>
     <div id="congratulations" class="hidden">
       <h1>Serdecznie gratulujemy zakupu!</h1>
-      <p>Wybrane auto: <span id="the_chosen">X</span></p>
+      <p>Wybrane auto:</p>
+      <h2><span id="the_chosen">X</span></h2>
       <p>Dodane akcesoria: <span id="added"></span></p>
       <p>Cena całkowita: <span id="amount"></span></p>
       <p>Imię i nazwisko: <span id="name_surname"></span></p>
       <p>Miejsce odbioru: <span id="place"></span></p>
       <p id="pickup_day"></p>
 
-      <button id="doneBtn">Zamknij</button>
+      <button class="pers_btn" id="doneBtn">Zamknij</button>
     </div>
   </body>
 </html>
