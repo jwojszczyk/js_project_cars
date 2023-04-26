@@ -60,21 +60,22 @@ function carPurchase() {
 $carPurchase.addEventListener("click", carPurchase);
 
 const $chooseCity = document.getElementById("city");
+
 function displayCity() {
-  // const choosenCity = $chooseCity.value;
-  document.getElementById("place").innerText = $chooseCity.value; //choosenCity;
-  //console.log(`Miasto: ${choosenCity}`);
+  document.getElementById("place").innerText = $chooseCity.value;
   localStorage.setItem("city", $chooseCity.value);
 }
 if (localStorage.getItem("city")) {
   $chooseCity.value = localStorage.getItem("city");
 }
 
-function show1() {
-  document.getElementById("div1").style.visibility = "hidden";
+document.getElementById("place").innerText = $chooseCity.value;
+
+function hideLeaseTxt() {
+  document.getElementById("lease_txt").style.visibility = "hidden";
 }
-function show2() {
-  document.getElementById("div1").style.visibility = "visible";
+function showLeaseTxt() {
+  document.getElementById("lease_txt").style.visibility = "visible";
 }
 
 const checkBox1 = document.getElementById("winter_tires");

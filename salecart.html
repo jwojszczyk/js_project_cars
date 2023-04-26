@@ -81,7 +81,7 @@
             class="required"
             value="cash"
             checked="checked"
-            onclick="show1();"
+            onchange="hideLeaseTxt()"
           />
           gotówka
           <input
@@ -90,10 +90,12 @@
             id="radio_btn"
             class="required"
             value="leasing"
-            onclick="show2();"
+            onchange="showLeaseTxt()"
           />
           leasing<br />
-          <p id="div1" class="not_visible">przygotujemy niezbędne dokumenty</p>
+          <p id="lease_txt" class="not_visible">
+            przygotujemy niezbędne dokumenty
+          </p>
         </form>
       </div>
 
@@ -101,22 +103,10 @@
         <form name="flname_form">
           <div class="input_container">
             <label for="fname_input">Imię:</label>
-            <input
-              type="text"
-              name="fname"
-              id="fname_input"
-              onclick="carPurchase()"
-              required
-            />
+            <input type="text" name="fname" id="fname_input" required />
 
             <label for="lname_input">Nazwisko:</label>
-            <input
-              type="text"
-              name="lname"
-              id="lname_input"
-              onclick="carPurchase()"
-              required
-            />
+            <input type="text" name="lname" id="lname_input" required />
           </div>
           <div class="input_container">
             <form>
@@ -143,10 +133,8 @@
             </div>
           </div>
         </form>
-        <button type="button" id="back_Btn" class="pers_btn">Powrót</button>
-        <button class="pers_btn" id="purchase_button" onclick="carPurchase()">
-          Kupuję!
-        </button>
+        <button type="button" id="back_Btn" class="pers_btn2">Powrót</button>
+        <button class="pers_btn2" id="purchase_button">Kupuję!</button>
       </div>
     </div>
     <div id="congratulations" class="hidden">
@@ -159,7 +147,7 @@
       <p>Miejsce odbioru: <span id="place"></span></p>
       <p id="pickup_day"></p>
 
-      <button class="pers_btn" id="doneBtn">Zamknij</button>
+      <button class="pers_btn2" id="doneBtn">Zamknij</button>
     </div>
   </body>
 </html>
