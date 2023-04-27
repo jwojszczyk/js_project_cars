@@ -2,17 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lexend+Peta:wght@500&display=swap');
 
 body {
+  background-color: rgb(218, 218, 218);
   display:flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: 'Lexend Peta', sans-serif;
-  background-color: black;
   justify-content: center;
   align-items: center;
   align-content: space-between;
   text-align: center;
-  color: ghostwhite;
+  color: black;
+}
+
+.title{
+  background-color: grey;
 }
 
 .mainletter {
@@ -56,9 +60,11 @@ img {
 }
 
 .car_box {
-  padding: 0 0 60px 0;
-  width: 640px;
-  height: 530px;
+  display: grid;
+  justify-items: stretch;
+  padding: 0;
+  max-width: 640px;
+  height: auto;
   position: relative;
   transition: transform 0.3s ease-out;
   overflow: hidden;
@@ -79,7 +85,7 @@ img {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
-  transform: translateY(100%);
+  transform: translateY(120%);
   transition: transform 0.3s ease-out;
 }
 
@@ -88,7 +94,7 @@ img {
 }
 
 .car_box:hover .overlay {
-  transform: translateY(0);
+  transform: translateY(15%);
 }
 
 .accessories {
